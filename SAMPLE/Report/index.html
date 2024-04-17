@@ -1,0 +1,74 @@
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- animate -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<!-- fontawsome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- jquery Datatable -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css"/>
+<!-- jquery bootstrap Datepicker -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <div class="overflow-auto">
+        <div class="container-fluid">
+            <div class="form-group form-group-marginless mb-3 pt-4">
+                <h3>報表檢視</h3>
+            </div>
+            <div class="mt-4">
+                <div class="sticky-top">
+                    <div class="d-flex justify-content-start align-items-center border rounded shadow-sm my-2 p-2" style="background: aliceblue;">
+                        <button id="range_Mondh" class="btn btn-outline-primary rounded-circle p-0 mr-2" type="button" style="width:2rem; height:2rem;">月</button>
+                        <button id="range_Week" class="btn btn-outline-primary rounded-circle p-0 mr-2" type="button" style="width:2rem; height:2rem;">周</button>
+                        <button id="range_Day" class="btn btn-outline-primary rounded-circle p-0 mr-2" type="button" style="width:2rem; height:2rem;">日</button>
+                        <!-- <span class="mr-2">|</span> -->
+                        <div class="input-group input-group-sm w-50 mr-2" content="search-period">
+                            <input type="text" id="startDt" class="form-control" autocomplete="off" placeholder="YYYY/MM/DD">
+                            <div class="input-group-append">
+                                <span class="mx-2">~</span>
+                            </div>
+                            <input type="text" id="endDt" class="form-control" autocomplete="off" placeholder="YYYY/MM/DD">
+                        </div>
+                        <!-- <span class="mr-2">|</span> -->
+                        <button action="search" type="button" class="btn btn-sm btn-primary mr-2">查詢</button>
+                        <button action="download" type="button" class="btn btn-sm btn-outline-primary">下載</button>
+                    </div>
+                </div>
+
+                <!-- <div class="table-responsive"> -->
+                <div class="">
+                    <table id="table" class="table table-bordered" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>時間</th>
+                                <th>用戶</th>
+                                <th>訊息</th>
+                                <th>意圖</th>
+                                <th>意圖信心</th>
+                                <th>回覆</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- jquery Datatable -->
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<!-- jquery bootstrap Datepicker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- hard code demo data -->
+<script src="data.js"></script>
+
+<!-- reaally doing something -->
+<script src="report.js"></script>
+
