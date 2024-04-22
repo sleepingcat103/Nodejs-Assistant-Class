@@ -1,0 +1,6 @@
+[
+	{"ansId": "ANS-1", "messages": [{"type": "text", "value": "你要什麼口味"}]},
+	{"ansId": "ANS-2", "messages": [{"type": "text", "value": "你要什麼大小"}]},
+	{"ansId": "ANS-3", "messages": [{"type": "text", "value": "好的，為您訂購了 $flavor 口味的 $size pizza"}]},
+	{"ansId": "ANS-4", "messages": [{"type": "text", "value": "我不瞭解您的問題。您可以換種方式說明"}]}
+]
