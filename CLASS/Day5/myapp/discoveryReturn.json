@@ -1,0 +1,82 @@
+{
+  "matching_results": 1,
+  "retrieval_details": {
+    "document_retrieval_strategy": "untrained"
+  },
+  "aggregations": [
+    {
+      "type": "term",
+      "field": "enriched_text.entities.text",
+      "count": 10,
+      "name": "entities"
+    },
+    {
+      "type": "term",
+      "field": "footer",
+      "count": 10,
+      "name": "8e47f0c6-3275-4d10-9354-258d8de24921",
+      "results": [
+        {
+          "key": "【GNHRL】- 1/28-",
+          "matching_results": 1
+        },
+        {
+          "key": "【GNHRL】- 10/28-",
+          "matching_results": 1
+        },
+        {
+          "key": "【GNHRL】- 11/28-",
+          "matching_results": 1
+        },
+        {
+          "key": "【GNHRL】- 12/28-",
+          "matching_results": 1
+        },
+        {
+          "key": "【GNHRL】- 13/28-",
+          "matching_results": 1
+        },
+        {
+          "key": "【GNHRL】- 14/28-",
+          "matching_results": 1
+        },
+        {
+          "key": "【GNHRL】- 15/28-",
+          "matching_results": 1
+        },
+        {
+          "key": "【GNHRL】- 16/28-",
+          "matching_results": 1
+        },
+        {
+          "key": "【GNHRL】- 17/28-",
+          "matching_results": 1
+        },
+        {
+          "key": "【GNHRL】- 18/28-",
+          "matching_results": 1
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "document_id": "e03b058e460542db25a9cfc5a47b0dfa",
+      "result_metadata": {
+        "collection_id": "49200460-15df-5b01-0000-018f13fd15b5",
+        "document_retrieval_source": "search",
+        "confidence": 0.11692
+      },
+      "document_passages": [
+        {
+          "passage_text": "<em>被</em><em>保險</em><em>人</em>的投保<em>年齡</em>，以足歲計算 ，但未滿一<em>歲</em>的零數超過六個月者，加算一<em>歲</em>。 <em>被</em><em>保險</em><em>人</em>的投保<em>年齡</em><em>發生</em>錯誤時，依下列規定辦理： 一、真實投保<em>年齡</em>較本公司<em>保險</em>費率表所載最高<em>年齡</em>為大者，本<em>契約</em>無效，其已繳<em>保險</em>費無息退還 要保人。 二、因投保<em>年齡</em>的錯誤，而致溢繳<em>保險</em>費者，本公司無息退還溢繳部分的<em>保險</em>費。但在<em>發生</em><em>保險</em><em>事</em> 故後始發覺且其錯誤<em>發生</em>在本公司者，本公司按原繳<em>保險</em>費與應繳<em>保險</em>費的比例提高「住院保 險金日額」，而不退還溢繳部分的<em>保險</em>費。 三、因投保<em>年齡</em>的錯誤，而致短繳<em>保險</em>費者，要保人得補繳短繳的<em>保險</em>費或按照所付的<em>保險</em>費與<em>被</em> <em>保險</em><em>人</em>的真實<em>年齡</em>比例減少「住院<em>保險</em>金日額」。",
+          "start_offset": 6945,
+          "end_offset": 7228,
+          "field": "text"
+        }
+      ],
+      "table_results_references": []
+    }
+  ],
+  "table_results": []
+}

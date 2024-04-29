@@ -1,0 +1,20 @@
+[
+	{
+		"ansId": "ANS-5",
+		"messages": [{
+			"type": "buttons",
+			"desc": "你想了解什麼口味的pizza",
+			"value": [{
+				"label": "夏威夷",
+				"type": "answerpack",
+				"value": "ANS-6"
+			}, {
+				"label": "海陸",
+				"type": "answerpack",
+				"value": "ANS-7"
+			}]
+		}]
+	},
+	{"ansId": "ANS-6", "messages": [{"type": "text", "value": "為您介紹夏威夷披薩"}]},
+	{"ansId": "ANS-7", "messages": [{"type": "text", "value": "為您介紹海陸披薩"}]}
+]

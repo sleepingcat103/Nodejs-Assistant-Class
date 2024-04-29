@@ -7,6 +7,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/chatbot', function(req, res, next) {
+  console.log(req.query);
+  
+
   res.render('chatbot');
 });
 

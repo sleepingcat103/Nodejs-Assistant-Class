@@ -1,0 +1,4 @@
+node_modules
+*.log
+.env
+# anything you want to ignore when building docker image
